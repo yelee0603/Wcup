@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* 환경설정 */
+.wrap{position: relative; width: 100%; height: 100vh;}
+.wrap .set-top{
+    width: 100%; height: 60px; background: #8bcbc8;
+    color: #fff; font-size: 18px; text-align: center; line-height: 60px;
+}
+.wrap .set-menu a{
+    position: relative;
+    display: block;
+    width: 100%; height: 50px;
+    border-bottom: 1px solid #ccc;
+    color: #666; font-size: 16px;
+    padding: 0 20px; line-height: 50px;
+    box-sizing: border-box;
+}
+.wrap .set-menu a span{
+    position: absolute; right: 0; top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrap .set-bottom{
+    position: absolute;
+    right: 20px; bottom: 80px;
+    text-align: right; line-height: 20px;
+    color: #8bcbc8; font-size: 14px;
+}
+
+/* 비밀번호설정 */
+
+.wrap .set-menu-top{
+    position: relative;
+    width: 100%; height: 60px; background: #fff;
+    color: #161616; font-size: 18px; text-align: center; line-height: 60px;
+    border-bottom: 1px solid #ccc; box-sizing: border-box;
+}
+.wrap .set-menu-top h3{display:inline-block;}
+.wrap .set-menu-top span{position: absolute; left: 10px; top: 50%; transform: translateY(-50%);}
+
+.popup-pw1, .popup-pw2{
+    width: 100%; height: 100vh; 
+    position: absolute;left: 0; top: 0;
+    background: #fff;  z-index:10;
+}
+.popup-pw1{display: none;}
+.popup-pw2{display: none;}
+.popup-pw1, .popup-pw2{text-align: center;}
+.popup-pw1 h4, .popup-pw2 h4{margin-top:60px; font-size: 20px;}
+.popup-pw1 h4+span, .popup-pw2 h4+span{
+    display: block;margin-top: 20px; margin-bottom: 80px;
+    font-size: 15px; color:#666; margin-top: 10px;
+}
+.popup-pw1 .circle,.popup-pw2 .circle{margin: 80px 0; display: block;}
+.popup-pw1 .circle span,.popup-pw2 .circle span{
+    width: 30px; height: 30px; border-radius: 15px; background: #ccc;
+    margin: 0 10px;
+}
+.popup-pw1 .circle span.active,.popup-pw2 .circle span.active{
+    background: #8bcbc8;
+}
+
+.popup-pw1 .keypad,.popup-pw2 .keypad{
+    position: relative; bottom: -35px;
+    width: 100%; font-size: 24px; font-weight: bold; 
+}
+.popup-pw1 .keypad li,.popup-pw2 li{
+    float: left; width: 33.33%; height: 70px;
+    text-align: center; line-height: 70px; color: #656565;
+}
+.popup-pw1 .keypad li.num,.popup-pw2 li.num{
+    font-size: 39px; font-weight: 900;
+}
+.popup-pw1 .keypad li.delete,.popup-pw2 li.delete{position: relative;}
+.popup-pw1 .keypad li.delete i,.popup-pw2 li.delete i{
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+}
+
+
+
+
+/* 알림설정 */
+input[type=checkbox]{display: none;}
+.alarm-set label{
+    position: absolute; 
+    top: 50%; right: 20px;
+    transform: translateY(-50%);
+    width: 44px; height: 20px; border-radius: 10px;
+    overflow: hidden;
+    background: #ccc; transition: 0.5s;
+}
+.alarm-set label .btn{
+    width: 16px; height: 16px; border-radius:8px; 
+    margin: 0 2px; left: 0;
+    background: #fff; transition:0.5s;
+}
+#on-off1:checked+label, #on-off2:checked+label, #on-off3:checked+label,
+#on-off4:checked+label, #on-off5:checked+label{
+    background: #8BCBC8;
+}
+#on-off1:checked+label span.btn, #on-off2:checked+label span.btn, #on-off3:checked+label span.btn,
+#on-off4:checked+label span.btn, #on-off5:checked+label span.btn{
+    margin-left:26px;
+}
+
+/* 자주하는질문 */
+.qna-set ul li{}
+.qna-set ul li a{
+    display: block; padding:0 20px; font-size: 16px; font-weight: bold;
+}
+.qna-set ul li a i{
+    position: absolute; right: 20px; top: 50%; 
+    transform: translateY(-50%);}
+.qna-set ul li a.active{background: #8bcbc8; color: #fff;}
+
+.qna-set ul li .box{
+    display: none; font-size: 14px; color: #666;
+    padding: 10px 40px; padding-right: 20px;
+    line-height: 25px; text-indent: -16px;
+    border-bottom:1px solid #ccc;
+}
+
+/* 초기화 */
+.popup-reset{
+    display: none;
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 260px; height: 190px; padding: 30px; box-sizing: border-box;
+    background: #8bcbc8; color: #fff;
+    z-index: 10; text-align: center; font-size: 18px; font-weight: bold; line-height: 30px;
+}
+
+.popup-reset span{font-size: 12px; font-weight: normal; display: block;}
+.popup-reset button{
+    color: #fff; text-decoration: underline; font-size: 14px;
+    position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+}
+
+.popup-bg{
+    display: none;
+    position: fixed; 
+    top:0; left:0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+}

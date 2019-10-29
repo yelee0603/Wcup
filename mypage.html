@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mypage</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+    <link rel="stylesheet" href="css/mypage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/mypage.js"></script>
+</head>
+<body>
+    <header>
+        <div class="circle">
+            <i class="icon icon-logout"></i>
+            <span>Login</span>
+            <button><i class="icon icon-penSmall"></i>정보수정</button>
+            <button><i class="icon icon-logoutSmall"></i>로그아웃</button>
+        </div> 
+    </header>
+    <div class="nav">
+        <ul class="tab-nav">
+            <li class="active">
+                <a href="#tab1">생리컵</a>
+            </li>
+            <li>
+                <a href="#tab2">나의 건강</a>
+            </li>
+        </ul>
+        <span class="bar"></span>
+    </div>
+    <div class="tab-contents">
+        <div id="tab1" style="display: block;">
+            <div class="wrap">
+                <img src="img/cup_lily.jpg" alt="릴리컵">
+                <span class="use">사용중</span>
+                <dl>
+                    <dt>릴리컵</dt>
+                    <dd>사이즈<span>M</span></dd>
+                    <dd>사용기간<span>19.05.01~</span></dd>
+                </dl>
+                <i class="icon icon-wcupG"></i>
+            </div>
+            <div class="wrap off">
+                <img src="img/cup_ruby.jpg" alt="루비컵">
+                <span class="use off">사용완료</span>
+                <dl class="off">
+                    <dt>루비컵</dt>
+                    <dd>사이즈<span class="off">L</span></dd>
+                    <dd>사용기간<span>17.02.01 ~ 19.04.20</span></dd>
+                </dl> 
+                <i class="icon icon-wcupG"></i>
+            </div>
+            <div class="wrap off">
+                <img src="img/cup_mermaid.jpg" alt="루비컵">
+                <span class="use off">사용완료</span>
+                <dl class="off">
+                    <dt>머메이드컵</dt>
+                    <dd>사이즈<span class="off">S</span></dd>
+                    <dd>사용기간<span>16.01.09 ~ 16.05.20</span></dd>
+                </dl> 
+                <i class="icon icon-wcupG"></i>
+            </div>
+            <div class="btnwrap">
+                <button class="icon icon-plusBSmall"></button>
+            </div>
+        </div>
+        <div id="tab2">
+            <div class="add">
+                <label for="date">날짜<input type="text" class="date" id="today"></label>
+                <label for="weight">체중<input type="text" class="weight"></label><span>kg</span>
+                <label for="tem">체온<input type="text" class="tem"></label><span>℃</span>
+                <button class="icon icon-plusBSmall"></button>
+            </div>
+            <div class="pop">
+                <p>데이터를 입력해주세요.</p>
+            </div>
+            <div class="box">
+                <p>오늘의 체중과 체온을 입력해주세요.</p>
+            </div>
+            <div class="box ex">
+                <span>19.05.22</span>
+                <span>52.8kg</span>
+                <span>36.6℃</span>
+                <button class="icon icon-pen"></button>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+    <aside class="bottomNav">
+        <ul>
+            <li><a href="myPage.html">
+                    <i class="icon icon-myPage on"></i>
+                    <span class="blind">마이페이지</span>
+                </a>
+            </li>
+            <li><a href="graph.html"> 
+                    <i class="icon icon-graph"></i>
+                    <span class="blind">몸상태분석</span>
+                </a>
+            </li>
+            <li><a href="index.html">
+                    <i class="icon icon-dDay"></i>
+                    <span class="blind">디데이</span>
+                </a>
+            </li>
+            <li><a href="wcup.html">
+                    <i class="icon icon-wcup"></i>
+                    <span class="blind">생리컵정보</span>
+                </a>
+            </li>
+            <li><a href="setting.html">
+                    <i class="icon icon-setting"></i>
+                    <span class="blind">환경설정</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+</body>
+</html>

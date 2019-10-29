@@ -1,0 +1,355 @@
+@charset "UTF-8";
+.swiper-slide>b, .intro2 b, .popup b{
+    margin-top: 120px; margin-bottom: 30px;
+    color: #161616; font-size: 20px;
+    display: block; line-height: 35px;
+}
+
+.loading{
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background: #8bcbc8; position: absolute;
+    z-index: 100;
+}
+.Wlogo{
+    position: fixed; left:50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px; height: 97px;
+    background: url(../img/wSprite.png);
+    background-size: 900px 1000px;
+    background-position: -600px 0;
+}
+
+
+.intro{background: #8bcbc8; width: 100%; height: 100%; position: fixed; display: none;}
+.icon-logo{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+
+.wrap{text-align: center; height: 100vh;}
+.introSlide{height: 100%;}
+/* 스와이프 설정====================================================== */
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    width: auto; height:20px; left: 50%; top: 50px;
+    transform: translateX(-50%);
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin: 0;}
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    background:#ccc; opacity: 1;
+    width: 20px; height: 20px;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet-active{background: #8bcbc8;}
+.swiper-container-horizontal>.swiper-pagination-clickable .swiper-pagination-bullet:nth-child(2){margin: 0 10px;}
+
+/* 1페이지============================================================ */
+.intro1{position: relative; text-align: center;}
+.intro1 b{margin-bottom:120px;}
+.intro1 a{
+    width: 240px; height: 50px; 
+    border: 2px solid #c1c1c1;
+    padding: 0 10px;
+    box-sizing: border-box; 
+    line-height: 50px;
+    font-size: 14px; font-weight: 900; color: #161616;
+    position: relative;
+    text-align: left;
+}
+.intro1 a span{
+    display: inline-block; vertical-align: middle; 
+    margin-right: 10px; margin-bottom: 4px;
+}
+.intro1 .login-btn a:nth-of-type(2){margin-top: 10px; margin-bottom: 120px;}
+
+.intro1 p{
+    color: #666; font-size: 14px; font-weight: 100;
+    white-space: nowrap; line-height: 27px;
+}
+/* 2페이지============================================================ */
+.intro2{text-align: center; height: 100vh;}
+.intro2 b{margin-bottom: 50px;}
+.intro2 .before{
+    display: none;
+}
+.intro2 .before .addcup{
+    position: relative;
+    display: inline-block;
+    width: 150px; height: 150px;
+    background: #8bcbc8;
+}
+.intro2 .before .icon-plusWSmall{
+    background-position: -550px -50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.intro2 .after{
+    /* display: none; */
+    text-align: center;
+}
+.intro2 .after .cup-detail .register{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    /* width: 150px; height: 150px; */
+    margin-right: 10px;
+    overflow: hidden;
+}
+.intro2 .after .cup-detail .list .item{
+    display: inline-block;
+}
+
+
+#register .list .item {
+    position: relative;
+    height: 60px;
+    margin-bottom: 10px;
+    
+}
+#register .list .item .item-swipe {
+    background: url(../img/lilycup.png);
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    padding: 10px;
+}
+
+#register .list .item .item-swipe.open {
+    background: #fff;
+}
+
+#register .list .item .item-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+#register .list .item .item-back .action {
+    position: absolute;
+    top: 0;
+    /* z-index: 1; */
+    bottom: 0;
+    right: 20px;
+    width: 100px; height: 150px;
+
+
+}
+#register .list .item .item-back .action.first {
+    right:0;
+}
+
+#register .btn-delete {
+    background: #8bcbc8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .intro2 .after .cup-detail .register::before,
+.intro2 .after .cup-detail .register::after{
+    content: '';
+    display: table;
+    clear: both;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.intro2 .after .cup-detail .delete{
+    display: inline-block;
+    position: absolute;
+    left: 0; top: 0;
+    width: 75px; height: 150px;
+    background: #8bcbc8;
+}
+.intro2 .after .cup-detail .delete .icon-trash{
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro2 .after .cup-detail .img{
+    position: relative;
+    display: inline-block;
+    width: 150px; height: 150px; 
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: url(../img/lilycup.png);
+    background-size: 148px 148px;
+}
+.intro2 .after .cup-detail .img>label{
+    display: inline-block;
+    width: 40px; height: 40px; border-radius: 20px;
+    background: #8bcbc8; color: #fff;
+    font-size: 20px; font-weight: bold;
+    line-height: 40px; text-align: center;
+    position: absolute; right: 10px; bottom: 10px; z-index: 1;
+}
+
+.intro2 .after .cup-detail .addcup{
+    position: relative;
+    display: inline-block;
+    width: 150px; height: 150px;
+    background: #8bcbc8;
+}
+.intro2 .after .cup-detail .addcup .icon-plusWSmall{
+    background-position: -550px -50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);}
+
+/* 3페이지============================================================ */
+.intro3>b{margin-bottom: 70px;}
+.intro3 .wrap{
+    position: relative;
+    text-align: left; color: #333; font-size: 20px; font-weight: bold;
+    line-height: 50px; margin: 0 50px;
+}
+.intro3 .wrap div{display: inline-block;}
+.intro3 .wrap .latest span:first-child{display: block;}
+.intro3 .wrap .period span:first-of-type, .intro3 .wrap .cycle span:first-of-type{margin-right: 114px;}
+
+.intro3 .wrap .unit{
+    position: absolute;
+    font-size: 18px; color: #666;
+}
+
+.intro3 .wrap .period .unit{right: 0px; top: 0px;}
+.intro3 .wrap .cycle .unit{right: 0; top: 54px;}
+.intro3 .wrap .latest span:nth-of-type(3){left: 158px;}
+.intro3 .wrap .latest span:last-of-type{right: 0px; top: 156px;}
+
+.intro3 div.select{
+    position:relative; display:inline-block; top: 0;
+    width:50px;height:30px; text-align: center;
+    color: #8bcbc8; font-weight: bold; font-size: 30px;
+}
+
+.intro3 .txt{
+    display:inline-block; width:50px; height:30px; line-height:30px;
+    border-bottom: 1px solid #666;
+}
+
+.intro3 .latest .selectBox3, .selectBox3 .txt{width: 80px;}
+.intro3 .latest .selectBox4{margin-left: 28px; margin-right: 24px;}
+
+.intro3 div.select select{
+    display:block; 
+    width:50px; height:30px; 
+    filter: alpha(opacity=0); z-index:10;
+    opacity:0;
+    appearance:none; /* 기본 스타일 없애기 */
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -o-appearance:none;
+    border: 1px solid transparent;
+    border-bottom: 2px solid #666;
+    color: #8bcbc8;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute; top: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+/* 설정완료 */
+.set-end{
+    position: absolute; top: 0; left: 0; z-index: 10;
+    display: none;
+    width: 100%; height: 100vh; background-color: #fff;
+}
+.set-end b{
+    z-index: 10; color: #161616; font-size: 20px;
+    display: block; line-height: 35px; margin-left: 50px;
+    position: absolute; top: 50%; transform: translateY(-50%);
+}
+.set-end span.icon{
+    position: absolute;left: 50%;top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* 팝업=============================================================== */
+.popup{
+    /* display: none; */
+    position: absolute; z-index: 10; top: 0; left: 0;
+    width: 100%; height: 100vh; background: #fff;
+    text-align: center;
+}
+.popup .icon-close{position:absolute; left:0;}
+
+.popup.popup-addCup1{display: none;}
+.popup.popup-addCup1 input,
+.popup.popup-addCup2 input{
+    display: inline-block;
+    width:320px; height: 50px; 
+    border:2px solid #8bcbc8;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.popup-addCup2{display: none;}
+
+.popup.popup-addCup2 .cup-detail{
+    text-align: center;
+    padding-top: 20px;
+}
+.popup.popup-addCup2 .cup-detail .img{
+    display: inline-block;
+    width: 150px; height: 150px; 
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: url(../img/lilycup.png);
+    background-size: 148px 148px;
+}
+
+.popup.popup-addCup2 .cup-detail .cup-info span{
+    display: block;
+    color: #8bcbc8; font-size: 16px;
+    margin: 20px 0;
+}
+.popup.popup-addCup2 .cup-detail .cup-info [type=radio]{display: none;}
+.popup.popup-addCup2 .cup-detail .cup-info label span{
+    display: inline-block;
+    width: 40px; height: 40px; border-radius: 20px;
+    background: #ccc; color: #fff;
+    font-size: 20px; font-weight: bold;
+    line-height: 40px; text-align: center;
+    margin: 0;
+}
+.popup.popup-addCup2 .cup-detail .cup-info label:nth-of-type(2){margin: 0 15px;}
+.popup.popup-addCup2 .cup-detail .cup-info input:checked+span{background: #8bcbc8;}

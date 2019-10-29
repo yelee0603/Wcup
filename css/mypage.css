@@ -1,0 +1,446 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+li{list-style: none; color: #000;}
+a{text-decoration: none; color: #000; display: inline-block;}
+button{background: none; border: 0;/* outline: none; */}
+.blind{font-size: 0; position: absolute; left: -9999px;}
+
+body{font-family: 'NanumSquareRound', sans-serif;}
+
+
+/* 아이콘 */
+.icon{background-image: url(../img/wSprite.png); display: inline-block; background-size: 900px 1000px;}
+.icon-google{width: 40px; height: 40px; background-position: 0 0;}
+.icon-facebook{width: 40px;height: 40px; background-position: -50px 0;}
+.icon-trash{width: 40px; height: 40px; background-position: -100px 0;}
+.icon-startW{width: 50px; height: 50px; background-position: -150px 0;}
+.icon-start{width: 50px; height: 50px; background-position: -200px 0;}
+.icon-end{width: 50px; height: 50px; background-position: -250px 0;}
+.icon-love{width: 50px; height: 50px; background-position: -300px 0;}
+.icon-loveP{width: 50px; height: 50px; background-position: -350px 0;}
+.icon-drug{width: 50px; height: 50px; background-position: -400px 0;}
+.icon-plus{width: 50px; height: 50px; background-position: -450px 0;}
+.icon-minus{width: 50px; height:50px; background-position: -500px 0;}
+.icon-plusW{width: 50px; height:50px; background-position: -550px 0;}
+
+
+/* 2번째 줄 */
+.icon-tip{width: 40px; height: 40px; background-position: 0 -50px;}
+.icon-myPage{width:50px; height:50px; background-position: -50px -50px;}
+.icon-graph{width:50px; height:50px; background-position: -100px -50px;}
+.icon-wcup{width:50px; height:50px; background-position: -150px -50px;}
+.icon-setting{width:50px; height:50px; background-position: -200px -50px;}
+.icon-loveB{width:50px; height:50px; background-position: -250px -50px;}
+.icon-lovePB{width:50px; height:50px; background-position: -300px -50px;}
+.icon-loveO{width:50px; height:50px; background-position: -350px -50px;}
+.icon-lovePO{width:50px; height:50px; background-position: -400px -50px;}
+.icon-drugB{width:50px; height:50px; background-position: -450px -50px;}
+.icon-plusBSmall{width: 40px; height: 40px; background-position: -500px -50px;}
+.icon-plusWSmall{width: 40px; height: 40px; background-position: -550px -50px;}
+
+
+/* 3번째 줄 */
+.icon-closeW{width: 50px; height: 50px;background-position: 0 100px;}
+.icon-myPage.on{width:50px; height:50px; background-position: -50px -100px;}
+.icon-graph.on{width:50px; height:50px; background-position: -100px -100px;}
+.icon-wcup.on{width:50px; height:50px; background-position: -150px -100px;}
+.icon-setting.on{width:50px; height:50px; background-position: -200px -100px;}
+.icon-cup1{width:40px; height: 40px; background-position:-250px -100px;}
+.icon-cup2{width:40px; height: 40px; background-position:-300px -100px;}
+.icon-cup3{width:40px; height: 40px; background-position:-350px -100px;}
+.icon-dropdownW{width:32px; height:32px; background-position: -400px -100px;}
+.icon-check{width: 40px; height: 40px;background-position: -450px -100px;}
+.icon-dropup{width: 40px; height: 40px; background-position: -500px 100px;}
+.icon-lovePSmall, .icon-tipLoveP{width: 32px; height: 32px; background-position:-550px -100px;}
+
+
+/* 4번째 줄 */
+.icon-close{width: 40px; height: 40px;background-position: 0 -150px;}
+.icon-closeSmall{width: 32px; height: 32px;background-position:-50px -150px ;}
+.icon-del{width: 40px; height: 40px;background-position: -100px -150px;}
+.icon-pen{width: 40px; height: 40px;background-position: -150px -150px;}
+.icon-arrowL{width: 40px; height: 40px;background-position: -200px -150px;}
+.icon-arrowLG{width: 40px; height: 40px;background-position: -250px -150px;}
+.icon-arrowRG{width: 40px; height: 40px;background-position:-300px -150px;}
+.icon-dropdownG{width: 40px; height: 40px;background-position: -350px -150px;}
+.icon-startMiddle{width: 40px; height: 40px; background-position: -400px -150px;}
+.icon-endMiddle{width: 40px; height: 40px; background-position: -450px -150px;}
+.icon-startSmall,.icon-tipStart{width: 32px; height: 32px; background-position:-500px -150px;}
+.icon-endSmall, .icon-tipEnd{width: 32px; height: 32px; background-position:-550px -150px;}
+
+
+/* 5번째 줄 */
+.icon-dDay.on{width:60px; height:60px; background-position: 0 -200px;}
+.icon-dDay{width:60px; height:60px; background-position: -100px -200px;}
+.icon-cal.on{width:60px; height:60px; background-position: -200px -200px;}
+.icon-cal{width:60px; height:60px; background-position: -300px -200px;}
+.icon-logout{width:60px; height:60px; background-position: -400px -200px;}
+.icon-login{width:60px; height:60px; background-position: -500px -200px;}
+
+
+/* 6번째 줄 */
+.icon-startBig{width: 100px; height: 100px; background-position:0 -300px;}
+.icon-endBig{width: 100px; height: 100px; background-position:-100px -300px;}
+.icon-cup1G{width:100px; height: 100px; background-position: -200px -300px;}
+.icon-cup2G{width:100px; height: 100px; background-position: -300px -300px;}
+.icon-cup3G{width:100px; height: 100px; background-position: -400px -300px;}
+.icon-closeWBig{width: 60px; height: 60px; background-position: -500px -300px;}
+
+
+/* 오른쪽 */
+.icon-logo{width:90px; height:97px; background-position: -600px 0;}
+.icon-wcupG{width:21px; height:14px;background-position: -700px 0;}
+.icon-wcupB{width:21px; height:14px;background-position: -750px 0;}
+.icon-tipArrowL{width:60px; height:40px; background-position: -800px 0;}
+.icon-penSmall{width:24px; height:24px; background-position: -700px -50px;}
+.icon-logoutSmall{width:24px; height:24px; background-position: -750px -50px;}
+.icon-tipArrowR{width:60px; height:40px; background-position: -800px -50px;}
+.icon-logoBig{width:236px; height:293px; background-position: -600px -100px;}
+.icon-loveSmall, .icon-tipLove{width: 32px; height: 32px; background-position:-850px -100px;}
+.icon-drugSmall, .icon-tipDrug{width: 32px; height: 32px; background-position:-850px -150px;}
+
+
+/* 증상아이콘 */
+.icon-bad{width: 80px;height: 80px; background-position: 0 -400px;}
+.icon-soso{width: 80px;height: 80px; background-position: -100px -400px;}
+.icon-happy{width: 80px;height: 80px; background-position: 0 -500px;}
+.icon-sad{width: 80px;height: 80px; background-position: -100px -500px;}
+.icon-shy{width: 80px;height: 80px; background-position: 0 -600px;}
+.icon-shocked{width: 80px;height: 80px; background-position: -100px -600px;}
+
+.icon-bad.on{width: 80px;height: 80px; background-position: 0 -700px;}
+.icon-soso.on{width: 80px;height: 80px; background-position: -100px -700px;}
+.icon-happy.on{width: 80px;height: 80px; background-position: 0 -800px;}
+.icon-sad.on{width: 80px;height: 80px; background-position: -100px -800px;}
+.icon-shy.on{width: 80px;height: 80px; background-position: 0 -900px;}
+.icon-shocked.on{width: 80px;height: 80px; background-position: -100px -900px;}
+
+.icon-bad.on2{width: 80px;height: 80px; background-position: -200px -400px;}
+.icon-soso.on2{width: 80px;height: 80px; background-position: -200px -500px;}
+.icon-happy.on2{width: 80px;height: 80px; background-position: -200px -600px;}
+.icon-sad.on2{width: 80px;height: 80px; background-position: -200px -700px;}
+.icon-shy.on2{width: 80px;height: 80px; background-position: -200px -800px;}
+.icon-shocked.on2{width: 80px;height: 80px; background-position: -200px -900px;}
+
+.icon-appetite{width: 80px;height: 80px; background-position: -300px -400px;}
+.icon-fever{width: 80px;height: 80px; background-position:  -400px -400px;}
+.icon-dizzy{width: 80px;height: 80px; background-position: -500px -400px;}
+.icon-acne{width: 80px;height: 80px; background-position:-300px -500px;}
+.icon-chestPain{width: 80px;height: 80px; background-position: -400px -500px;}
+.icon-constipation{width: 80px;height: 80px; background-position: -500px -500px;}
+.icon-indigestion{width: 80px;height: 80px; background-position: -300px -600px;}
+.icon-diarrhea{width: 80px;height: 80px; background-position: -400px -600px;}
+.icon-backache{width: 80px;height: 80px; background-position: -500px -600px;}
+.icon-diabetes{width: 80px;height: 80px; background-position: 0 -400px;}
+.icon-cough{width: 80px;height: 80px; background-position: -100px -400px;}
+.icon-throwUp{width: 80px;height: 80px; background-position: -100px -600px;}
+
+.icon-appetite.edit{width: 80px;height: 80px; background-position:-300px -700px;}
+.icon-fever.edit{width: 80px;height: 80px; background-position: -400px -700px;}
+.icon-dizzy.edit{width: 80px;height: 80px; background-position: -500px -700px;}
+.icon-acne.edit{width: 80px;height: 80px; background-position: -300px -800px;}
+.icon-chestPain.edit{width: 80px;height: 80px; background-position: -400px -800px;}
+.icon-constipation.edit{width: 80px;height: 80px; background-position: -500px -800px;}
+.icon-indigestion.edit{width: 80px;height: 80px; background-position:-300px -900px;}
+.icon-diarrhea.edit{width: 80px;height: 80px; background-position: -400px -900px;}
+.icon-backache.edit{width: 80px;height: 80px; background-position: -500px -900px;}
+.icon-diabetes.edit{width: 80px;height: 80px; background-position:-300px -700px;}
+.icon-cough.edit{width: 80px;height: 80px; background-position:-300px -700px;}
+.icon-throwUp.edit{width: 80px;height: 80px; background-position:-300px -700px;}
+
+.icon-appetite.on{width: 80px;height: 80px; background-position: -600px -400px;}
+.icon-fever.on{width: 80px;height: 80px; background-position:-700px -400px ;}
+.icon-dizzy.on{width: 80px;height: 80px; background-position:-800px -400px;}
+.icon-acne.on{width: 80px;height: 80px; background-position:-600px -500px;}
+.icon-chestPain.on{width: 80px;height: 80px; background-position:-700px -500px ;}
+.icon-constipation.on{width: 80px;height: 80px; background-position:-800px -500px ;}
+.icon-indigestion.on{width: 80px;height: 80px; background-position:-600px -600px;}
+.icon-diarrhea.on{width: 80px;height: 80px; background-position: -700px -600px;}
+.icon-backache.on{width: 80px;height: 80px; background-position:-800px -600px;}
+.icon-diabetes.on{width: 80px;height: 80px; background-position:-600px -400px;}
+.icon-cough.on{width: 80px;height: 80px; background-position:-600px -400px;}
+.icon-throwUp.on{width: 80px;height: 80px; background-position:-600px -400px;}
+
+.icon-appetite.on2{width: 80px;height: 80px; background-position:-600px -700px ;}
+.icon-fever.on2{width: 80px;height: 80px; background-position:-700px -700px ;}
+.icon-dizzy.on2{width: 80px;height: 80px; background-position:-800px -700px;}
+.icon-acne.on2{width: 80px;height: 80px; background-position:-600px -800px;}
+.icon-chestPain.on2{width: 80px;height: 80px; background-position: -700px -800px;}
+.icon-constipation.on2{width: 80px;height: 80px; background-position: -800px -800px;}
+.icon-indigestion.on2{width: 80px;height: 80px; background-position:-600px -900px;}
+.icon-diarrhea.on2{width: 80px;height: 80px; background-position: -700px -900px;}
+.icon-backache.on2{width: 80px;height: 80px; background-position:-800px -900px;}
+.icon-diabetes.on2{width: 80px;height: 80px; background-position:-600px -700px ;}
+.icon-cough.on2{width: 80px;height: 80px; background-position:-600px -700px ;}
+.icon-throwUp.on2{width: 80px;height: 80px; background-position:-600px -700px ;}
+
+/* 하단네비게이션 */
+.bottomNav{
+    position: fixed; bottom: 0;
+    width: 100%;height: 60px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.bottomNav ul{overflow: hidden; height: 100%;}
+.bottomNav ul li{float: left; height: 100%; width: 20%; text-align: center;}
+.bottomNav ul li a{ line-height: 100px;}
+
+/* 하단 버튼 */
+/* 100%인버튼 */
+.bottomBtn{
+    position: absolute; bottom: 0;
+    width: 100%; height: 60px;
+    border-top: 1px solid #8bcbc8;
+    color: #8bcbc8; font-size: 24px;
+}
+.bottomBtn.active{
+    color: #fff; background: #8bcbc8;
+    border-top: 0;
+}
+/* 50%인 버튼 */
+.bottomBtn2{
+    position: absolute; bottom: 0;
+    width: 100%; height: 60px;
+    
+}
+.bottomBtn2 button{color: #fff; font-size: 24px;height: 100%;}
+.bottomBtn2 .left{float:left;width:50%;background: #ccc;}
+.bottomBtn2 .right{width:50%; background: #8bcbc8;}
+
+
+/* header */
+header{height: 180px;}
+header .circle{
+    width: 80px; height: 80px; border-radius: 50%;
+    border: 2px solid #c1c1c1;
+    box-sizing: border-box;
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    top: 30px;
+}
+header .circle.active{border: 2px solid #8bcbc8;}
+header .circle i{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+header span{
+    color: #c1c1c1; font-size: 18px; 
+    font-weight: bold;
+    border-bottom: 2px solid #c1c1c1;
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    bottom: -35px;
+}
+header span.active{
+    color: #8bcbc8; 
+    border-bottom: 2px solid #8bcbc8;
+    display: inline-table;
+}
+header .circle button{
+    position: absolute;
+    bottom: -32px;
+    font-size: 10px;
+    line-height: 20px;
+    display: none;
+}
+header .circle button.active{display: block;}
+header .circle button:nth-of-type(1){
+    left: -60px;
+}
+header .circle button:nth-of-type(2){
+    right: -75px;
+}
+header .circle button i{
+    position: absolute;
+    left: -12px;
+}
+/* 탭메뉴 */
+.nav{position: relative;}
+.tab-nav{overflow: hidden;}
+.tab-nav li{
+    float: left; width: 50%; text-align: center;
+    font-size: 16px; 
+    height: 42px; line-height: 42px;
+    border-bottom: 2px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+    /* transition: 0.3s; */
+}
+.tab-nav li a{color: #666;}
+
+.tab-nav li.active{
+    /* border-bottom: 6px solid #8bcbc8;
+    box-sizing: border-box; */
+}
+.tab-nav li.active a{
+    font-weight: 800; color: #8bcbc8;
+}
+.nav span{
+    border-bottom: 6px solid #8bcbc8;
+    box-sizing: border-box;
+    width: 50%;
+    display: block;
+    position: absolute; bottom: 0px;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+/* 생리컵 */
+.tab-contents>div{display: none;}
+.tab-contents{background: #efefef; overflow-y: auto;}
+#tab1{margin-bottom: 20px;}
+#tab2{margin-bottom: 30px;}
+.tab-contents .wrap img{width: 100px; height: 100px;}
+.tab-contents #tab1{padding-top: 20px;}
+#tab1 .btnwrap{text-align: center;}
+.tab-contents #tab1 .wrap{
+    margin: 0 20px 20px; 
+    height: 100px;
+    border: 2px solid #8bcbc8;
+    background: #fff;
+    position: relative;
+}
+.tab-contents .wrap dd:last-of-type span{
+    padding-left: 5px;
+}
+.tab-contents .use{
+    width: 100px; height: 24px;
+    position: absolute;
+    background: #8bcbc8; opacity: 0.8;
+    font-weight: bold;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    font-size: 12px; color: #fff;
+    line-height: 24px;
+}
+.tab-contents .wrap dl{
+    position: absolute;
+    top: 0;
+    margin-left: 110px; margin-top: 10px;
+}
+.tab-contents .wrap i{
+    position: absolute;
+    right: 10px; top: 10px;
+}
+.tab-contents dl dt{font-weight: bold; margin-bottom: 13px;}
+.tab-contents dl dd{font-size: 14px; margin-bottom: 0;}
+.tab-contents dl dd:nth-of-type(2){color: #666;}
+.tab-contents dl *{margin-bottom: 10px;}
+.tab-contents .wrap dd:first-of-type span{
+    font-size: 10px; font-weight: bold;
+    width: 16px; height: 16px; border-radius: 50%;
+    background: #8bcbc8; color: #fff;
+    line-height: 16px; text-align: center;
+    display: inline-block; margin-left: 10px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+/* 나의건강 */
+#tab2 .add{text-align: center; padding-top: 25px; box-sizing: border-box;}
+#tab2 label{
+    font-size: 20px;
+    font-weight: 700;
+    color: #8bcbc8;
+    position: relative;
+    margin: 25px;
+}
+#tab2 .pop{
+    width: 200px; height: 80px;
+    background: #fff;
+    border: 1px solid #8bcbc8;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 999;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#tab2 .pop p{
+    line-height: 80px; text-align: center;
+   
+}
+#tab2 input.date{width: 80px; color: #666;}
+#tab2 input{
+    width: 40px; height: 20px; background: none; 
+    border: 0; border-bottom: 2px solid #ccc;
+    outline: none; font-size: 16px;
+    padding: 0 5px; box-sizing: border-box;
+    position: absolute;
+    bottom: -25px; left: 50%; transform: translateX(-50%);
+    font-weight: bold;
+    color: #8bcbc8; font-size: 14px;
+    text-align: center;
+}
+
+#tab2 .add{
+    background: #fff;
+    height: 90px;
+    position: relative;
+}
+#tab2 .add button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+#tab2 .add span{font-size: 15px; color: #666; position: relative; right: 15px; top: 25px; font-weight: bold;}
+#tab2 .box{
+    height: 42px;
+    border: 1px solid #c1c1c1;
+    background: #fff;
+    margin: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+#tab2 .box p{
+    font-size: 16px; color: #ccc;
+    line-height: 42px;
+    text-align: center;
+}
+#tab2 .box>button{
+    position: absolute;
+    right: 0;
+}
+#tab2 .box span{
+    line-height: 42px; display: inline-block;
+    width: 29%; text-align: center;
+}
+#tab2 .box span:nth-child(2){font-weight: bold; color: #8bcbc8;}
+#tab2 .box span:nth-child(3){font-weight: bold; color: #8bcbc8;}
+
+
+/* 생리컵 사용중 사용완료 */
+#tab1 .wrap.off{border: 0;}
+#tab1 .wrap .use.off{background: #c1c1c1;}
+#tab1 .wrap dl.off{color: #666;}
+#tab1 .wrap dl dd:first-of-type span.off{background: #c1c1c1;}
+
+/* 나의건강 삭제 */
+/* #tab2 .list .item{position: relative;}
+#tab2 .list .item .item-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+#tab2 .list .item .item-back .action {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    width: 80px; height: 42px;
+
+
+}
+#tab2 .list .item .item-back .action.first {
+    right:0;
+}
+
+#tab2 .btn-delete {
+    background: #8bcbc8;
+} */
